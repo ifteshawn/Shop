@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="546.0" prefWidth="973.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shop.FXMLDocumentController">
+   <children>
+      <Button fx:id="simulate" layoutX="32.0" layoutY="293.0" mnemonicParsing="false" onAction="#simulateAction" text="Simulate" />
+      <Button fx:id="exit" layoutX="28.0" layoutY="468.0" mnemonicParsing="false" onAction="#exitAction" text="Exit" />
+      <Label layoutX="99.0" layoutY="234.0" text="Shopping Area" />
+      <Label layoutX="563.0" layoutY="234.0" text="Service Area" />
+      <Label layoutX="320.0" layoutY="234.0" text="Checkout Queue" />
+      <Label layoutX="813.0" layoutY="234.0" text="Log" />
+      <Label layoutX="338.0" layoutY="417.0" text="Last Event" />
+      <Label layoutX="570.0" layoutY="417.0" text="Time" />
+      <Label layoutX="817.0" layoutY="515.0" text="Event Queue" />
+      <TextField fx:id="lastEvent" layoutX="265.0" layoutY="379.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextArea fx:id="checkoutQueue" layoutX="264.0" layoutY="21.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextArea fx:id="serviceArea" layoutX="495.0" layoutY="21.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextArea fx:id="eventQueue" layoutX="732.0" layoutY="293.0" prefHeight="212.0" prefWidth="200.0" />
+      <TextArea fx:id="log" layoutX="732.0" layoutY="21.0" prefHeight="200.0" prefWidth="200.0" scrollTop="100.0" />
+      <TextField fx:id="time" layoutX="499.0" layoutY="379.0" prefHeight="25.0" prefWidth="193.0" />
+      <TextField fx:id="duration" layoutX="264.0" layoutY="293.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="340.0" layoutY="337.0" text="Duration" />
+      <Button fx:id="reset" layoutX="29.0" layoutY="379.0" mnemonicParsing="false" onAction="#resetAction" text="Reset" />
+      <RadioButton fx:id="stepMode" layoutX="499.0" layoutY="297.0" mnemonicParsing="false" text="Step Mode" />
+      <TextField fx:id="entered" layoutX="267.0" layoutY="468.0" prefHeight="25.0" prefWidth="193.0" />
+      <TextField fx:id="notEntered" layoutX="496.0" layoutY="468.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="297.0" layoutY="507.0" text="Number currently in shop" />
+      <Label layoutX="511.0" layoutY="507.0" text="Number that did not enter shop" />
+      <TextArea fx:id="shoppingArea" layoutX="38.0" layoutY="21.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
